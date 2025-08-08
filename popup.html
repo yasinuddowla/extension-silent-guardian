@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SilentGuardian</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <img src="icons/icon32.png" alt="SilentGuardian" class="logo-icon">
+        <h1>SilentGuardian</h1>
+      </div>
+      <div class="status-indicator" id="statusIndicator">
+        <span class="status-dot" id="statusDot"></span>
+        <span id="statusText">Active</span>
+      </div>
+    </div>
+
+    <!-- Current Site Section -->
+    <div class="site-section">
+      <div class="site-info">
+        <div class="site-domain" id="currentDomain">Loading...</div>
+        <div class="site-status">
+          <span id="siteProtectionStatus">Protected</span>
+        </div>
+      </div>
+      <div class="site-toggle">
+        <label class="switch">
+          <input type="checkbox" id="siteToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Settings Section -->
+    <div class="settings-section">
+      <h3>Settings</h3>
+      
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-label">Block Trackers</span>
+          <span class="setting-description">Block tracking scripts and pixels</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="trackerBlockingToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-label">Auto-handle Consent</span>
+          <span class="setting-description">Automatically handle cookie dialogs</span>
+        </div>
+        <select id="consentActionSelect" class="setting-select">
+          <option value="manual">Manual</option>
+          <option value="reject" selected>Auto Reject</option>
+          <option value="accept">Auto Accept</option>
+          <option value="dismiss">Auto Dismiss</option>
+        </select>
+      </div>
+
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-label">Show Notifications</span>
+          <span class="setting-description">Show badge when dialogs are detected</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="notificationsToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="actions-section">
+      <button class="btn btn-secondary" id="settingsBtn">
+        <span class="btn-icon">⚙️</span>
+        Advanced Settings
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span class="version">v1.0.0</span>
+      <span class="separator">•</span>
+      <a href="#" id="helpLink" target="_blank">@yasinuddowla</a>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

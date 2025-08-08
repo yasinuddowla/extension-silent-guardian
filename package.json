@@ -1,0 +1,31 @@
+{
+  "name": "silent-guardian",
+  "version": "1.0.0",
+  "description": "Chrome extension that blocks trackers and silences cookie prompts",
+  "main": "background.js",
+  "scripts": {
+    "build": "echo 'Building extension...' && npm run validate",
+    "validate": "node -e \"console.log('Validating manifest...'); const manifest = require('./manifest.json'); console.log('Manifest version:', manifest.manifest_version); console.log('Extension name:', manifest.name);\"",
+    "test": "echo 'Running tests...'",
+    "dev": "echo 'Starting development mode...'",
+    "package": "zip -r silent-guardian-extension.zip . -x 'node_modules/*' '*.git*' 'package*.json' 'README.md' 'project-details.md'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "privacy",
+    "tracker-blocking",
+    "cookie-consent",
+    "manifest-v3"
+  ],
+  "author": "SilentGuardian Team",
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/silent-guardian"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/silent-guardian/issues"
+  },
+  "homepage": "https://github.com/your-username/silent-guardian#readme"
+}
