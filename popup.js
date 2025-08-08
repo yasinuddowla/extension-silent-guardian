@@ -70,11 +70,6 @@ class SilentGuardianPopup {
       this.updateSetting('showNotifications', e.target.checked);
     });
 
-    // Action buttons
-    document.getElementById('settingsBtn').addEventListener('click', () => {
-      this.openSettingsPage();
-    });
-
     document.getElementById('helpLink').addEventListener('click', (e) => {
       e.preventDefault();
       this.openHelpPage();
@@ -210,11 +205,6 @@ class SilentGuardianPopup {
     } catch (error) {
       console.error('Failed to update setting:', error);
     }
-  }
-
-  openSettingsPage() {
-    // Open Chrome extension options page
-    chrome.runtime.openOptionsPage?.() || alert('Advanced settings coming soon!');
   }
 
   openHelpPage() {
