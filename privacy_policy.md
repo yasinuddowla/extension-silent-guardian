@@ -119,7 +119,6 @@ SilentGuardian's code is designed to be transparent. Users and security research
 
 If you have questions about this privacy policy or the extension's privacy practices:
 
-- **Email**: support@yasinuddowla.com
 - **Website**: https://yasinuddowla.com
 - **Extension Support**: Available through the Chrome Web Store
 
